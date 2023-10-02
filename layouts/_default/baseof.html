@@ -13,6 +13,7 @@
       {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
     {{ end }}
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
     <script defer src="/js/main.js"></script>
   </head>
   <body>

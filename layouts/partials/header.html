@@ -1,4 +1,4 @@
-<header class="max-w-7xl mx-auto">
+<header class="max-w-7xl mx-auto" x-data="{ open: false }">
   <div class="p-4 md:px-6 lg:px-8">
     <div class="relative flex items-center justify-between">
       <a href="/" class="flex-none md:width-auto overflow-hidden">
@@ -7,7 +7,7 @@
       </a>
 
       <!-- Mobile menu button-->
-      <button type="button" class="flex items-center justify-center md:hidden p-2 text-black hover:text-sky-700 focus:outline-none focus:ring-2 focus:ring-inset" id="mobile-menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+      <button type="button" class="flex items-center justify-center md:hidden p-2 text-black hover:text-sky-700 focus:outline-none focus:ring-2 focus:ring-inset" @click="open = ! open">
         <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -28,7 +28,7 @@
 
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="hidden md:hidden" id="mobile-menu">
+  <div class="md:hidden" x-show="open">
     <ul class="space-y-1 px-2 pb-3 pt-2 text-sm font-medium">
       <li><a href="/about" class="block px-3 py-2 hover:text-sky-700">Chi siamo</a></li>
       <li><a href="/servizi" class="block px-3 py-2 hover:text-sky-700">I nostri servizi</a></li>
