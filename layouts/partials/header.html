@@ -7,8 +7,7 @@
       </a>
 
       <!-- Mobile menu button-->
-      <button type="button" class="flex items-center justify-center md:hidden p-2 text-black hover:text-sky-700 focus:outline-none focus:ring-2 focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
-        <span class="absolute -inset-0.5"></span>
+      <button type="button" class="flex items-center justify-center md:hidden p-2 text-black hover:text-sky-700 focus:outline-none focus:ring-2 focus:ring-inset" id="mobile-menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
         <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -29,8 +28,8 @@
 
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="md:hidden" id="mobile-menu">
-    <ul class="space-y-1 px-2 pb-3 pt-2 font-medium">
+  <div class="hidden md:hidden" id="mobile-menu">
+    <ul class="space-y-1 px-2 pb-3 pt-2 text-sm font-medium">
       <li><a href="/about" class="block px-3 py-2 hover:text-sky-700">Chi siamo</a></li>
       <li><a href="/servizi" class="block px-3 py-2 hover:text-sky-700">I nostri servizi</a></li>
       <li><a href="/contatti" class="block px-3 py-2 hover:text-sky-700">Contatti</a></li>
