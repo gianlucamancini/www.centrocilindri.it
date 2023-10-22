@@ -1,16 +1,67 @@
 {{ define "main" }}
 
-<section class="relative isolate overflow-hidden py-32 sm:py-40 bg-slate-800">
-  <div class="max-w-7xl mx-auto">
-    <div class="px-4 md:px-6 lg:px-8">
-      <div class="mb-6 sm:mb-10 font-semibold text-white tracking-tight text-center sm:text-left">
-        <p class="text-3xl sm:text-5xl mb-2">Cilindri idraulici e pneumatici</p>
-        <p class="text-3xl sm:text-5xl mb-2">Progettazione e costruzione</p>
-        <p class="text-3xl sm:text-5xl">Assistenza e vendita guarnizioni</p>
-      </div>
-      <a href="#" class="text-white">I nostri servizi <span aria-hidden="true">&rarr;</span></a>
+<!-- Intro -->
+<section class="max-w-screen-xl mx-auto py-8 sm:py-16 lg:py-24 px-4 bg-slate-800">
+  <p class="mb-8 text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-gray-900">Manutenzione, progettazione e costruzione di cilindri idraulici e pneumatici</p>
+  <p class="mb-8 text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-gray-900">Assistenza e vendita guarnizioni</p>
+  <a href="#" class="inline-flex items-center justify-center py-1 text-base font-medium text-center text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+    I nostri servizi
+    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+    </svg>
+  </a>
+</section>
+
+
+<!-- Gallery -->
+<div class="max-w-screen-xl mx-auto p-4">
+  <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+    <button type="button" class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Tutte le categorie</button>
+    {{ $categories := .Site.Data.showcase.categories }}
+    {{ range $categories }}
+      <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">{{ . }}</button>
+    {{ end }}
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+    </div>
+    <div>
+      <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
     </div>
   </div>
-</section>
+</div>
+
+
 
 {{ end }}
