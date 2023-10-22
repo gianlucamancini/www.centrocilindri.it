@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- Intro -->
-<section class="max-w-screen-xl mx-auto py-8 sm:py-16 lg:py-24 px-4 bg-slate-800">
+<section class="max-w-screen-xl mx-auto py-8 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-16 bg-slate-800">
   <p class="mb-8 text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-gray-900">Manutenzione, progettazione e costruzione di cilindri idraulici e pneumatici</p>
   <p class="mb-8 text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-gray-900">Assistenza e vendita guarnizioni</p>
   <a href="#" class="inline-flex items-center justify-center py-1 text-base font-medium text-center text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
@@ -12,16 +12,8 @@
   </a>
 </section>
 
-
 <!-- Gallery -->
-<div class="max-w-screen-xl mx-auto p-4">
-  <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-    <button type="button" class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Tutte le categorie</button>
-    {{ $categories := .Site.Data.showcase.categories }}
-    {{ range $categories }}
-      <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">{{ . }}</button>
-    {{ end }}
-  </div>
+<div class="max-w-screen-xl mx-auto p-4 sm:p-8 lg:p-16">
   <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
       <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
@@ -61,7 +53,5 @@
     </div>
   </div>
 </div>
-
-
 
 {{ end }}
