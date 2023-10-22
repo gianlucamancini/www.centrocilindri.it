@@ -1,3 +1,5 @@
 import 'flowbite';
 
-alert('Hello World');
+window.addEventListener('error', (error) => {
+  alert(error.message + ' (' + error.filename + ':' + error.lineno + ')');
+});
