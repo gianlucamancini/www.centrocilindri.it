@@ -20,6 +20,7 @@
     {{ partial "footer.html" . }}
 
     <!-- We use cookies to provide our services and for analytics and marketing. To find out more about our use of cookies and how you can disable them, please see our Privacy Policy. By continuing to browse our website, you agree to our use of cookies. -->
-    <script src="/js/main.js"></script>
+    {{ $scripts := resources.Get "js/main.js" }}
+    <script src="{{ $scripts.RelPermalink }}"></script>
   </body>
 </html>
