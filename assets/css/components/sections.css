@@ -1,0 +1,8 @@
+.section-with-background {
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-color: rgba(55, 65, 81, 0.9);
+  background-image: url(https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/coast-house-view.jpg);
+}
