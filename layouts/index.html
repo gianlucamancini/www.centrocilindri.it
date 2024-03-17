@@ -1,33 +1,47 @@
 {{ define "main" }}
+<div class="lg:mt-[-6rem]">
 
-<!-- Intro -->
-<section style="background-image: url('{{ resources.Get "images/ref-12.jpg" }}');" class="section-with-background max-w-screen-xl mx-auto py-16 sm:py-24 lg:py-36 px-4 sm:px-8 lg:px-16">
-  <h1 class="mb-8 text-xl md:text-2xl lg:text-3xl font-semibold leading-none tracking-normal text-white uppercase">Cilindri idraulici e pneumatici</h1>
-  <div class="mb-8 text-3xl md:text-5xl lg:text-5xl font-semibold leading-none tracking-tight text-gray-200">
-    <p class="mb-4">Li ripariamo, li costruiamo</p>
-    <p>Forniamo assistenza e guarnizioni</p>
-  </div>
-  <a href="#" class="inline-flex items-center justify-center py-1 text-base font-medium text-center text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-    Scopri i nostri servizi
-    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-    </svg>
-  </a>
-</section>
-
-<!-- Gallery -->
-<div class="max-w-screen-xl mx-auto p-4 sm:p-8 lg:p-16">
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    {{ range seq 12 }}
-      {{ $image := resources.Get (printf "images/ref-%d.jpg" .) }}
-      {{ with $image }}
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" alt="">
+  <!-- Intro -->
+  <section class="max-w-screen-2xl mx-auto relative z-10">
+    {{ $background := resources.Get "images/vertical-cylinders.jpg" }}
+    <div class="absolute inset-0 z-10 bg-black hero-background" style="background-image: url('{{ $background.RelPermalink }}');"></div>
+    <div class="hero-content-wrapper relative z-20 w-full h-full">
+      <div class="text-contrast relative w-full text-white">
+        <div class="py-16 sm:py-24 lg:py-36 px-4 sm:px-8 lg:px-16">
+          <div class="lg:w-2/3">
+            <div>
+              <p class="mb-4 text-xl md:text-2xl font-semibold leading-none tracking-normal red-title uppercase">Cilindri idraulici e pneumatici</p>
+              <div class="mb-8 text-2xl sm:text-3xl lg:text-5xl font-semibold leading-none tracking-tight text-gray-200">
+                <p class="mb-2 sm:mb-0">Li ripariamo, li costruiamo</p>
+                <p>Forniamo assistenza e guarnizioni</p>
+              </div>
+              <a href="{{ relref . "servizi" }}" class="inline-flex items-center justify-center py-1 text-gray-300 hover:text-white font-medium">
+                Scopri i nostri servizi
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-      {{ end }}
-    {{ end }}
-    <div>
-  </div>
-</div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Gallery -->
+  <div class="max-w-screen-xl mx-auto p-4 sm:p-8 lg:p-16">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {{ range seq 12 }}
+        {{ $image := resources.Get (printf "images/ref-%d.jpg" .) }}
+        {{ with $image }}
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" alt="">
+          </div>
+        {{ end }}
+      {{ end }}
+      <div>
+    </div>
+  </div>
+
+</div>
 {{ end }}
