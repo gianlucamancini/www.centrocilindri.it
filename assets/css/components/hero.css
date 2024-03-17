@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  background-color: rgba(55, 65, 81, 0.9);
+  background-color: rgba(30, 35, 40, 0.6);
 }
 
 .hero-bg-gradient {
@@ -17,6 +17,7 @@
 
 .red-title {
   color: rgb(231, 59, 84);
+  border-color: rgb(231, 59, 84);
 }
 
 .text-contrast {
