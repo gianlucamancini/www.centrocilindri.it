@@ -4,7 +4,7 @@
   <!-- Intro -->
   <section class="max-w-screen-xl mx-auto relative z-10">
     {{ $background := resources.Get "images/cylinders_packed.jpeg" }}
-    <div class="absolute inset-0 z-10 hero-bg" style="background-image: url('{{ $background.RelPermalink }}');"></div>
+    <div class="absolute inset-0 z-10 hero-bg" style="background-image: url('https://www.areatecnica.it/img/forging.jpg');"></div>
     <div class="min-h-[24rem] lg:min-h-screen w-full h-full relative z-20">
       <div class="text-contrast relative w-full text-white">
         <div class="py-16 sm:py-24 lg:py-36 px-4 sm:px-8 lg:px-16">
@@ -15,7 +15,7 @@
               <p class="mb-2">Li ripariamo, li costruiamo</p>
               <p>Forniamo assistenza e guarnizioni</p>
             </div>
-            <a href="{{ relref . "servizi" }}" class="inline-flex items-center justify-center p-2 border rounded-md red-title uppercase font-normal">
+            <a href="{{ relref . "servizi" }}" class="inline-flex items-center justify-center p-2 border rounded-md text-white uppercase font-normal">
               Scopri i nostri servizi
               <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -56,7 +56,7 @@
           <img class="mb-4 h-20" src="{{ (resources.Get "images/glyph.svg").RelPermalink }}" alt="Centro Cilindri">
         </div>
         <div class="sm:ml-4 lg:ml-6">
-          <div class="text-lg sm:text-xl lg:text-2xl mb-8 font-medium leading-relaxed tracking-tight">
+          <div class="text-lg sm:text-xl mb-8 font-medium leading-relaxed tracking-tight">
             <p>I tuoi cilindri perdono olio o aria frequentemente?</p>
             <p class="text-gray-700">Hai bisogno di una riparazione urgente di un cilindro idraulico o pneumatico?</p>
             <p>Vorresti assistenza per identificare le guarnizioni dei tuoi cilindri o delle tue presse?</p>
