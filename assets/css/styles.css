@@ -19,6 +19,7 @@
   background-image: linear-gradient(to top, rgb(17, 24, 39), rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0));
 }
 
+
 @screen md {
   html {
     font-size: 20px;

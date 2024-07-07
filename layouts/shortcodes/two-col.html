@@ -1,9 +1,10 @@
 <div class="relative flex lg:justify-center {{ with .Get "class" }}{{ . }}{{ end }}">
   {{ $reversed := .Get "isReversed" }}
+  {{ $shadow := .Get "shadow" }}
   {{ with .Get "image" }}
     {{ $image := resources.Get (printf "images/%s" .) }}
     {{ with $image }}
-      <img src="{{ .RelPermalink }}" class="hidden lg:flex h-72 shrink-0 {{ if $reversed }}order-1 lg:ml-8{{ else }}lg:mr-8{{ end }}" alt="">
+      <img src="{{ .RelPermalink }}" class="hidden lg:flex h-72 shrink-0 {{ if $shadow }}shadow-lg border{{ end }} {{ if $reversed }}order-1 lg:ml-8{{ else }}lg:mr-8{{ end }}" alt="">
     {{ end }}
   {{ end }}
 

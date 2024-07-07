@@ -1,80 +1,69 @@
 {{ define "main" }}
-<div class="lg:mt-[-6rem]">
 
-  <!-- Intro -->
-  <section class="max-w-screen-xl mx-auto relative z-10">
-    {{ $background := resources.Get "images/cylinders_packed.jpeg" }}
-    <div class="absolute inset-0 z-10 hero-bg" style="background-image: url('{{ $background.RelPermalink }}');"></div>
-    <div class="min-h-[30rem] lg:min-h-screen w-full h-full relative z-20">
-      <div class="text-contrast relative w-full text-white">
-        <div class="py-16 sm:py-24 lg:py-36 px-4 sm:px-8 lg:px-16">
-          <div class="lg:w-full">
-          <div>
-            <p class="mb-4 text-xl md:text-2xl font-semibold leading-none tracking-normal red-title uppercase">Cilindri idraulici e pneumatici</p>
-            <div class="mb-8 text-4xl md:text-5xl lg:text-6xl font-semibold leading-none tracking-tight text-white">
-              <p class="mb-2">Li ripariamo, li costruiamo</p>
-              <p>Forniamo assistenza e guarnizioni</p>
-            </div>
-            <a href="{{ relref . "servizi" }}" class="inline-flex items-center justify-center p-2 red-title border rounded-md text-white uppercase font-normal">
-              Scopri i nostri servizi
-              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-            </a>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <div class="max-w-screen-xl mx-auto">
-    <div class="py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-16">
-      <h2 class="mb-8 lg:mb-16 text-4xl md:text-5xl lg:text-6xl font-semibold leading-none tracking-tight text-center">Ultimi lavori</h2>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {{ range seq 12 }}
-          {{ $image := resources.Get (printf "images/ref-%d.jpg" .) }}
-          {{ with $image }}
-            <div>
-              <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" alt="">
-            </div>
-          {{ end }}
-        {{ end }}
+<!-- Intro -->
+<section class="max-w-screen-xl mx-auto relative z-10">
+  {{ $background := resources.Get "images/forging.jpeg" }}
+  <div class="absolute inset-0 z-10 hero-bg" style="background-image: url('{{ $background.RelPermalink }}');"></div>
+  <div class="min-h-[30rem] lg:min-h-screen w-full h-full relative z-20">
+    <div class="text-contrast relative w-full text-white">
+      <div class="py-16 sm:py-24 lg:py-36 px-4 sm:px-8 lg:px-16">
+        <div class="lg:w-full">
         <div>
-      </div>
-    </div>
-  </div>
-
-<!-- CTA -->
-<section class="max-w-screen-xl mx-auto">
-  <div class="pb-8 lg:pb-16 pl-4 sm:pl-8 lg:pl-16">
-    <div class="bg-slate-50 p-4 sm:p-8 lg:p-16">
-      <div class="flex items-center">
-        <div class="hidden sm:shrink-0 sm:block">
-          <img class="mb-4 h-20" src="{{ (resources.Get "images/glyph.svg").RelPermalink }}" alt="Centro Cilindri">
-        </div>
-        <div class="sm:ml-4 lg:ml-6">
-          <div class="text-lg sm:text-xl mb-8 font-medium leading-relaxed tracking-tight">
-            <p>I tuoi cilindri perdono olio o aria frequentemente?</p>
-            <p class="text-gray-700">Hai bisogno di una riparazione urgente di un cilindro idraulico o pneumatico?</p>
-            <p>Vorresti assistenza per identificare le guarnizioni dei tuoi cilindri o delle tue presse?</p>
-            <p class="text-gray-700">Vuoi avere un cilindro di scorta ma non hai i disegni costruttivi originali?</p>
+          <p class="mb-4 text-xl md:text-2xl font-semibold leading-none tracking-normal red-title uppercase">Cilindri idraulici e pneumatici</p>
+          <div class="mb-8 text-4xl md:text-5xl lg:text-6xl font-semibold leading-none tracking-tight text-white">
+            <p class="mb-2">Li ripariamo, li costruiamo</p>
+            <p>Forniamo assistenza e guarnizioni</p>
           </div>
-
-          <a href="{{ relref . "/contatti" }}" class="inline-flex items-center justify-center rounded-lg text-lg font-medium red-title">
-            Possiamo aiutarti
+          <a href="{{ relref . "servizi" }}" class="inline-flex items-center justify-center p-2 sm:px-4 border rounded-full font-semibold text-white">
+            Scopri i nostri servizi
             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
           </a>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
+<!-- Gallery -->
+<div class="max-w-screen-xl mx-auto">
+  <div class="py-8 lg:py-16 px-4 sm:px-8 lg:px-16">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {{ range seq 12 }}
+        {{ $image := resources.Get (printf "images/ref-%d.jpg" .) }}
+        {{ with $image }}
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" alt="">
+          </div>
+        {{ end }}
+      {{ end }}
+      <div>
+    </div>
+  </div>
 </div>
+
+<section class="max-w-screen-xl mx-auto p-4 sm:p-8 lg:p-16">
+  <div class="bg-slate-200 rounded-lg py-8 lg:py-16 p-4 sm:p-8 lg:p-16">
+    <div class="flex items-center">
+      <div class="sm:ml-4">
+        <div class="text-lg sm:text-xl mb-8 font-medium leading-relaxed tracking-tight">
+          <p>I tuoi cilindri perdono olio o aria frequentemente?</p>
+          <p class="text-gray-700">Hai bisogno di una riparazione urgente di un cilindro idraulico o pneumatico?</p>
+          <p>Vorresti assistenza per identificare le guarnizioni dei tuoi cilindri o delle tue presse?</p>
+          <p class="text-gray-700">Vuoi avere un cilindro di scorta ma non hai i disegni costruttivi originali?</p>
+        </div>
+
+        <a href="{{ relref . "/contatti" }}" class="inline-flex items-center justify-center rounded-lg text-lg font-medium red-title">
+          Possiamo aiutarti
+          <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ end }}
