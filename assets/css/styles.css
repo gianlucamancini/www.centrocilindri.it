@@ -6,9 +6,12 @@
 
 /* Text utilities */
 
-.red-title {
-  color: rgb(231, 59, 84);
-  border-color: rgb(231, 59, 84);
+.text-red {
+  color: rgb(151, 14, 23);
+}
+
+.bg-blue {
+  background-color: rgb(12, 63, 102);
 }
 
 .text-contrast {
@@ -18,7 +21,6 @@
 .light-gradient {
   background-image: linear-gradient(to top, rgb(17, 24, 39), rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0));
 }
-
 
 @screen md {
   html {

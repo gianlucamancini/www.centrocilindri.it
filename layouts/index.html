@@ -1,31 +1,18 @@
 {{ define "main" }}
 
-<!-- Intro -->
-<section class="max-w-screen-xl mx-auto relative z-10">
-  {{ $background := resources.Get "images/forging.jpeg" }}
-  <div class="absolute inset-0 z-10 hero-bg" style="background-image: url('{{ $background.RelPermalink }}');"></div>
-  <div class="min-h-[30rem] lg:min-h-screen w-full h-full relative z-20">
-    <div class="text-contrast relative w-full text-white">
-      <div class="py-16 sm:py-24 lg:py-36 px-4 sm:px-8 lg:px-16">
-        <div class="lg:w-full">
-        <div>
-          <p class="mb-4 text-xl md:text-2xl font-semibold leading-none tracking-normal red-title uppercase">Cilindri idraulici e pneumatici</p>
-          <div class="mb-8 text-4xl md:text-5xl lg:text-6xl font-semibold leading-none tracking-tight text-white">
-            <p class="mb-2">Li ripariamo, li costruiamo</p>
-            <p>Forniamo assistenza e guarnizioni</p>
-          </div>
-          <a href="{{ relref . "servizi" }}" class="inline-flex items-center justify-center p-2 sm:px-4 border rounded-full font-semibold text-white">
-            Scopri i nostri servizi
-            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-          </a>
-        </div>
-        </div>
-      </div>
+<!-- Hero -->
+<div class="relative overflow-hidden isolate px-6 pt-14 lg:px-8 bg-slate-800">
+  <img src="/images/forging.jpeg" alt="" class="absolute w-full h-full inset-0 -z-10 object-cover">
+  <div class="mx-auto max-w-7xl py-28 sm:py-44 lg:py-52">
+    <h1 class="mb-4 text-base sm:text-lg md:text-2xl font-semibold leading-7 text-red-800 uppercase">Cilindri idraulici e pneumatici</h1>
+    <div class="text-4xl font-bold tracking-tight text-white sm:text-6xl space-y-4">
+      <p>Li ripariamo, li costruiamo</p>
+      <p>Forniamo assistenza e guarnizioni</p>
     </div>
   </div>
-</section>
+
+  <div class="absolute w-full h-full inset-0 -z-10 bg-black/70 transform-gpu lg:blur-3xl" aria-hidden="true"></div>
+</div>
 
 <!-- Gallery -->
 <div class="max-w-screen-xl mx-auto">
