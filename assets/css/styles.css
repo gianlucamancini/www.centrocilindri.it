@@ -14,16 +14,8 @@
   background-color: rgb(12, 63, 102);
 }
 
-.text-shadow {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.light-gradient {
-  background-image: linear-gradient(to top, rgb(17, 24, 39), rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0));
-}
-
-@screen md {
+@layer base {
   html {
-    font-size: 18px;
+    font-family: "Inter", system-ui, sans-serif;
   }
 }
