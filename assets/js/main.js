@@ -576,7 +576,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flowbite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flowbite */ \"./node_modules/flowbite/lib/esm/index.js\");\n\nconsole.log('hello');\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flowbite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flowbite */ \"./node_modules/flowbite/lib/esm/index.js\");\n\nvar showMenuButton = document.getElementById('show-menu-button');\nvar closeMenuButton = document.getElementById('hide-menu-button');\nvar navMenu = document.getElementById('nav-menu');\nvar toggleNav = function toggleNav(event) {\n  navMenu.classList.toggle('hidden');\n};\nshowMenuButton.addEventListener('click', toggleNav);\ncloseMenuButton.addEventListener('click', toggleNav);\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
