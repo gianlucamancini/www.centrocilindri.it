@@ -4,12 +4,6 @@
 
 @import "components/all.css";
 
-/* Text utilities */
-
-.text-red {
-  color: rgb(151, 14, 23);
-}
-
 .bg-blue {
   background-color: rgb(12, 63, 102);
 }
