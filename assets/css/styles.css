@@ -3,15 +3,3 @@
 @tailwind utilities;
 
 @import "components/all.css";
-
-.bg-blue {
-  background-color: rgb(12, 63, 102);
-}
-
-@layer base {
-  html {
-    font-family: "InterVariable", system-ui, sans-serif;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    font-variation-settings: normal;
-  }
-}
