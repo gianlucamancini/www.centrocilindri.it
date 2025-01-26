@@ -16,16 +16,11 @@
       {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
     {{ end }}
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
   </head>
   <body>
     {{ partial "nav.html" . }}
     <main>{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }}
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     {{ $scripts := resources.Get "js/main.js" }}
     <script src="{{ $scripts.RelPermalink }}"></script>
