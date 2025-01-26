@@ -20,6 +20,7 @@ Globale
 - [ ] Piè di pagina da ampliare: inserire indirizzo/sedi, navigazione (con tasto _torna su_)
 - [ ] Google Analytics
 - [ ] Google Search Console
+- [ ] Clean-up componenti non necessari
 
 ## Processo
 
