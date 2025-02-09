@@ -10,11 +10,4 @@ module.exports = {
     // typography,
     // flowbite,
   ],
-  theme: {
-      fontFamily: {
-        sans: [
-          '"Inter", "Helvetica Neue", Helvetica, Arial, sans-serif',
-        ],
-      },
-    },
 };
