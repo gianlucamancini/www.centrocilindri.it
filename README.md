@@ -3,13 +3,12 @@
 ## TODO
 
 Home
-- [ ] 4 blocchi: inserire immagini di sfondo
+- [ ] Contenitore navigazione
 
 Chi siamo
-- [ ] Sezioni intervallate da stacco per metterle tutte su sfondo chiaro: foto stile striscia
-- [ ] Punti di forza: mettere icone tipo brochure
-- [ ] Settori industriali più specifici. Divisi diversamente in due con foto/colonne
-- [x] Sezione chi siamo da sistemare SFONDO CHIARO
+- [ ] Sezioni intervallate foto
+- [ ] Aree di competenza: fare due/tre versioni con testo tutto sopra/sotto
+- [ ] Settori industriali: mettere immagine di sfondo
 
 Servizi
 - [ ] Card: togliere slide scudo e sistemare slide si deve vedere un pezzo della card dopo
