@@ -2,16 +2,13 @@
 
 ## TODO
 
-Home
-- [ ] Contenitore navigazione
-
 Chi siamo
 - [ ] Sezioni intervallate foto
 - [ ] Aree di competenza: fare due/tre versioni con testo tutto sopra/sotto
 - [ ] Settori industriali: mettere immagine di sfondo
 
 Servizi
-- [ ] Card: togliere slide scudo e sistemare slide si deve vedere un pezzo della card dopo
+- [ ] Controllare scrollbar e bordi rotondi su Safari
 - [ ] Blocco urgenze da spostare all’inizio/tra le sezioni? Prima o dopo Digital Service o in due colonne stile home
 
 Globale
