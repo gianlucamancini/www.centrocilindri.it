@@ -3,9 +3,9 @@
 ## TODO
 
 Chi siamo
-- [ ] Sezioni intervallate foto
-- [ ] Aree di competenza: fare due/tre versioni con testo tutto sopra/sotto
-- [ ] Settori industriali: mettere immagine di sfondo
+- [X] Sezioni intervallate foto
+- [X] Aree di competenza: fare due/tre versioni con testo tutto sopra/sotto
+- [X] Settori industriali: mettere immagine di sfondo
 
 Servizi
 - [ ] Controllare scrollbar e bordi rotondi su Safari

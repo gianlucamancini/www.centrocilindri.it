@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="utf-8">
-    <title>{{ block "title" . }}Centro Cilindri{{ end }}</title>
+    <title>{{ block "title" . }}Centro Cilindri - Il partner ideale per l’intero ciclo di vita dei tuoi cilindri{{ end }}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ .Description }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,11 @@
       {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
     {{ end }}
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
     {{ partial "nav.html" . }}
