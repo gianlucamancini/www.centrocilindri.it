@@ -17,6 +17,8 @@ Globale
 - [ ] Google Analytics
 - [ ] Google Search Console
 - [ ] Clean-up componenti non necessari
+- [ ] Footer con social
+- [ ] Bandierina a fianco al menu principale
 
 ## Processo
 

@@ -16,7 +16,11 @@ backgroundImage: "https://blog.areatecnica.it/perche-fasce-guida-incrementano-vi
   </div>
 </div>
 
-{{< stripe image="/images/cilindri-arancio.jpg" >}}
+{{< stripe class="grid-cols-3 sm:grid-cols-4" >}}
+  {{< image src="/images/cilindro-danieli.jpg" class="col-span-1 sm:col-span-2" >}}
+  {{< image src="/images/pezzi-cilindro-telescopico.jpg" class="col-span-1" >}}
+  {{< image src="/images/pezzi-rev.jpg" class="col-span-1" >}}
+{{< /stripe >}}
 
 <!-- Aree di competenza -->
 <section aria-label="Aree di competenza" class="py-20 sm:py-32">
@@ -27,17 +31,20 @@ backgroundImage: "https://blog.areatecnica.it/perche-fasce-guida-incrementano-vi
 
     <div class="mt-8 lg:mt-16 relative grid grid-cols-1 gap-8 md:grid-cols-3">
       {{< card
-      title="Manutenzione"
-      text="Revisione, riparazione ed upgrade di cilindri idraulici e pneumatici"
-      image="/images/cilindro-200.jpg" >}}
+        title="Manutenzione"
+        text="Revisione, riparazione ed upgrade di cilindri idraulici e pneumatici"
+        image="/images/cilindro-200.jpg"
+      >}}
       {{< card
-      title="Produzione"
-      text="Progettazione, reverse engineering e fabbricazione di nuovi cilindri e componenti meccanici a disegno"
-      image="/images/pistoni-steli.jpg" >}}
+        title="Produzione"
+        text="Progettazione, reverse engineering e fabbricazione di nuovi cilindri e componenti meccanici a disegno"
+        image="/images/pistoni-steli.jpg"
+      >}}
       {{< card
-      title="Ricambi"
-      text="Assistenza sul campo e vendita di guarnizioni per cilindri e presse"
-      image="/images/pistone-guarnizioni.jpg" >}}
+        title="Ricambi"
+        text="Assistenza sul campo e vendita di guarnizioni per cilindri e presse"
+        image="/images/pistone-guarnizioni.jpg"
+      >}}
     </div>
 
     <div class="mt-8 lg:mt-16 text-center">
@@ -49,7 +56,11 @@ backgroundImage: "https://blog.areatecnica.it/perche-fasce-guida-incrementano-vi
   </div>
 </section>
 
-{{< stripe image="/images/pezzi-cilindro-telescopico.jpg" >}}
+{{< stripe class="grid-cols-3 sm:grid-cols-4" >}}
+  {{< image src="/images/cilindro-siderurgico.jpg" class="col-span-1 sm:col-span-2" >}}
+  {{< image src="/images/stelo-pistone.jpg" class="col-span-1" >}}
+  {{< image src="/images/cilindro-collare.jpg" class="col-span-1" >}}
+{{< /stripe >}}
 
 <!-- Perchè scegliere Centro Cilindri -->
 <section aria-label="Perchè scegliere Centro Cilindri" class="py-20 sm:py-32">
@@ -93,7 +104,11 @@ backgroundImage: "https://blog.areatecnica.it/perche-fasce-guida-incrementano-vi
   </div>
 </section>
 
-{{< stripe image="/images/pezzi-rev.jpg" >}}
+{{< stripe class="grid-cols-3 sm:grid-cols-4" >}}
+  {{< image src="/images/cilindri-nuovi.jpg" class="col-span-1 sm:col-span-2" >}}
+  {{< image src="/images/riparazione-cilindri.jpg" class="col-span-1" >}}
+  {{< image src="/images/bronzina.jpg" class="col-span-1" >}}
+{{< /stripe >}}
 
 <!-- I nostri clienti -->
 <section aria-label="I nostri clienti" class="py-20 sm:py-32">
@@ -136,4 +151,3 @@ backgroundImage: "https://blog.areatecnica.it/perche-fasce-guida-incrementano-vi
 </section>
 
 {{< cta >}}
-
