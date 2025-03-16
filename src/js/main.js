@@ -1,4 +1,5 @@
-import 'flowbite';
+// import 'flowbite';
+
 const showMenuButton = document.getElementById('show-menu-button');
 const closeMenuButton = document.getElementById('hide-menu-button');
 const navMenu = document.getElementById('nav-menu');

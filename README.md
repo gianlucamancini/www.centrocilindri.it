@@ -3,16 +3,14 @@
 ## TODO
 
 Chi siamo
-- [X] Sezioni intervallate foto
-- [X] Aree di competenza: fare due/tre versioni con testo tutto sopra/sotto
-- [X] Settori industriali: mettere immagine di sfondo
+- [ ] Cambiare testo iniziale prendendolo da Vision e Mission file Piano industriale (/ Amministrazione)
 
 Servizi
 - [ ] Controllare scrollbar e bordi rotondi su Safari
 - [ ] Blocco urgenze da spostare all’inizio/tra le sezioni? Prima o dopo Digital Service o in due colonne stile home
 
 Globale
-- [ ] Unificare stili: testate (titolo, sottotitolo e pretitolo in rosso), spaziature
+- [ ] Unificare stili: testate (titolo, sottotitolo e pretitolo in rosso), immagini/sfumature di sfondo, spaziature, ecc.
 - [ ] Piè di pagina da ampliare: inserire indirizzo/sedi, navigazione (con tasto _torna su_)
 - [ ] Google Analytics
 - [ ] Google Search Console
