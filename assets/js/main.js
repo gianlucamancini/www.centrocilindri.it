@@ -1,32 +1,41 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+const openNavButton = document.getElementById('open-nav');
+const closeNavButton = document.getElementById('close-nav');
+const navElement = document.getElementById('nav');
+const rootElement = document.documentElement;
 
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
-/***/ (() => {
+let NAV_IS_OPEN = false;
 
-eval("// import 'flowbite';\n\nvar showMenuButton = document.getElementById('show-menu-button');\nvar closeMenuButton = document.getElementById('hide-menu-button');\nvar navMenu = document.getElementById('nav-menu');\nvar toggleNav = function toggleNav(event) {\n  navMenu.classList.toggle('hidden');\n};\nshowMenuButton.addEventListener('click', toggleNav);\ncloseMenuButton.addEventListener('click', toggleNav);\nvar editables = document.querySelectorAll('[data-editable]');\neditables.forEach(function (elem) {\n  elem.addEventListener('click', function (event) {\n    var el = event.target;\n    var sign = prompt(\"Indirizzo dell'immagine\", el.src);\n    if (sign) {\n      el.setAttribute('src', sign);\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
+const openNav = () => {
+  if (NAV_IS_OPEN) {
+    return;
+  }
 
-/***/ })
+  console.log('OPENING')
+  NAV_IS_OPEN = true;
+  rootElement.style.overflowY = 'hidden';
+  nav.classList.remove('hidden');
+}
 
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/js/main.js"]();
-/******/ 	
-/******/ })()
-;
+const closeNav = () => {
+  if (!NAV_IS_OPEN) {
+    return;
+  }
+
+  console.log('CLOSING')
+  NAV_IS_OPEN = false;
+  rootElement.style.overflowY = 'visible';
+  nav.classList.add('hidden');
+}
+
+openNavButton.addEventListener('click', openNav);
+closeNavButton.addEventListener('click', closeNav);
+
+const editableItems = document.querySelectorAll('[data-editable]');
+editableItems.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    let element = event.target;
+    let sign = prompt("Indirizzo dell'immagine", element.src);
+
+    sign && element.setAttribute('src', sign);
+  })
+})

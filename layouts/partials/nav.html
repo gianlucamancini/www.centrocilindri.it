@@ -7,48 +7,37 @@
       </a>
     </div>
     <div class="flex lg:hidden">
-      <button id="show-menu-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
-        <span class="sr-only">Apri menu</span>
+      <button id="open-nav" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+        <span class="sr-only">Mostra navigazione</span>
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
     </div>
-    <div class="hidden lg:flex lg:justify-end lg:gap-x-12 leading-6 text-gray-200">
-      <a href="/chi-siamo" class="hover:text-white">Chi siamo</a>
-      <a href="/servizi" class="hover:text-white">I nostri servizi</a>
-      <a href="/contatti" class="hover:text-white">Contatti</a>
-    </div>
+    <ul class="hidden lg:flex lg:justify-end lg:space-x-12 font-semibold text-gray-200">
+      <li><a href="/chi-siamo" class="hover:text-white">Chi siamo</a></li>
+      <li><a href="/servizi" class="hover:text-white">I nostri servizi</a></li>
+      <li><a href="/contatti" class="hover:text-white">Contatti</a></li>
+    </ul>
   </nav>
-
-  <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="hidden lg:hidden" role="dialog" aria-modal="true" id="nav-menu">
-    <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-50"></div>
-    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-      <div class="flex items-center justify-between">
-        <a href="/" class="-m-1.5 p-1.5">
-          <span class="sr-only">Centro Cilindri</span>
-          <!--
-          <svg class="h-9 w-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 51.249851 57.375"><defs><radialGradient xlink:href="#a" id="b" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-1.82237 -20.56073 20.56073 -1.82237 69.265592 177.14722)" cx="0" cy="0" fx="0" fy="0" r="1" spreadMethod="pad"/><radialGradient fx="0" fy="0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-254.487 254.487 254.487 254.487 2903.59 5614.89)" spreadMethod="pad" id="a"><stop offset="0" stop-color="#3e80cb"/><stop offset=".13151844" stop-color="#1777c1"/><stop offset=".5" stop-color="#115b94"/><stop offset="1" stop-color="#0c3f66"/></radialGradient></defs><g transform="matrix(1.47572 0 0 1.47572 -80.76042 -229.357275)"><circle style="font-variation-settings:normal" cx="74.25045" cy="174.82063" r="5.4657555" fill="#970e17" fill-rule="evenodd"/><path d="M75.937911 194.22343c-4.973203.44038-10.11316-1.00985-14.238-4.46602-8.243699-6.90433-9.336606-19.22587-2.43418-27.47266 3.310456-3.94989 8.116306-6.37487 13.446864-6.79808 5.220983-.41919 10.338439 1.17674 14.041773 4.37878 1.963298 1.71916 1.713958 3.82091.653533 5.04469-1.154881 1.33394-3.404311 1.80691-5.170618.2938-5.477021-4.34357-13.22851-3.66427-17.608917 1.57174-2.14561 2.56295-3.163863 5.80116-2.868709 9.13591.295625 3.32612 1.867022 6.34255 4.429977 8.48817 2.64286 2.211 6.134424 3.2858 9.538393 2.899 3.246158-.34838 6.108429-1.91794 8.055893-4.42913.578326-.73728.634756-1.43726.147943-1.83504-.411997-.33967-1.123781-.34092-1.781118.4282-1.66782 2.08334-4.106632 3.4008-6.836795 3.66802-2.786739.27225-5.598725-.5904-7.739783-2.3903-4.381985-3.66096-4.963709-10.20579-1.292467-14.58218 3.664706-4.38109 10.20807-4.96106 14.586673-1.29245.511005.42779.578684 1.18679.151032 1.7047-.428368.50902-1.194728.57654-1.706333.1512-3.354969-2.80867-8.369304-2.36384-11.17547.99173-2.811158 3.35439-2.36676 8.36835.992029 11.17871 1.645157 1.37728 3.80813 2.0601 5.942587 1.83345 2.080531-.20598 3.933799-1.20284 5.215082-2.80569 1.645611-1.91567 3.892651-1.81396 5.183623-.75339 1.298759 1.06558 1.78845 3.19139.21798 5.1924-2.346763 3.0266-5.794546 4.931-9.700204 5.34883-4.080799.44923-8.206534-.82584-11.352465-3.45802-3.058287-2.5573-4.935193-6.1541-5.288321-10.12453-.351145-3.97548.863287-7.84381 3.424404-10.90488 5.228251-6.23982 14.454842-7.0747 21.005815-1.88666.762296.65388 1.487248.34902 1.79905-.01.547762-.62749-.02585-1.29322-.414061-1.6354-3.203336-2.77448-7.67659-4.16246-12.259777-3.79126-4.69538.36405-8.891737 2.49074-11.782345 5.94091-6.047707 7.22403-5.087639 18.01921 2.132425 24.0636 7.222568 6.04499 18.017142 5.08741 24.064411-2.13251.428383-.50902 1.191492-.57624 1.701927-.15038.515118.42824.582115 1.19341.151845 1.70383-3.450368 4.12148-8.252998 6.45865-13.233777 6.90093" fill="url(#b)"/></g></svg>
-          -->
-        </a>
-        <button id="hide-menu-button" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Chiudi menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="mt-6 flow-root">
-        <div class="-my-6">
-          <div class="space-y-2 py-6">
-            <a href="/chi-siamo" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300">Chi siamo</a>
-            <a href="/servizi" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300">I nostri servizi</a>
-            <a href="/contatti" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-300">Contatti</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </header>
+
+<!-- Mobile menu, show/hide based on menu open state. -->
+<div class="fixed z-50 inset-0 hidden lg:hidden" role="dialog" aria-modal="true" id="nav">
+  <!-- Background backdrop, show/hide based on slide-over state. -->
+  <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"></div>
+
+  <div class="fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900">
+
+    <button id="close-nav" type="button" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600">
+      <span class="sr-only">Close navigation</span>
+      <svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible" aria-hidden="true"><path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+    </button>
+
+    <ul class="space-y-6">
+      <li><a href="/chi-siamo" class="hover:text-blue-500">Chi siamo</a></li>
+      <li><a href="/servizi" class="hover:text-blue-500">I nostri servizi</a></li>
+      <li><a href="/contatti" class="hover:text-blue-500">Contatti</a></li>
+    </ul>
+  </div>
+</div>
