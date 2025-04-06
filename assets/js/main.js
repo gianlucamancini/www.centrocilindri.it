@@ -15,7 +15,7 @@
   \************************/
 /***/ (() => {
 
-eval("// import 'flowbite';\n\nvar showMenuButton = document.getElementById('show-menu-button');\nvar closeMenuButton = document.getElementById('hide-menu-button');\nvar navMenu = document.getElementById('nav-menu');\nvar toggleNav = function toggleNav(event) {\n  navMenu.classList.toggle('hidden');\n};\nshowMenuButton.addEventListener('click', toggleNav);\ncloseMenuButton.addEventListener('click', toggleNav);\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("// import 'flowbite';\n\nvar showMenuButton = document.getElementById('show-menu-button');\nvar closeMenuButton = document.getElementById('hide-menu-button');\nvar navMenu = document.getElementById('nav-menu');\nvar toggleNav = function toggleNav(event) {\n  navMenu.classList.toggle('hidden');\n};\nshowMenuButton.addEventListener('click', toggleNav);\ncloseMenuButton.addEventListener('click', toggleNav);\nvar editables = document.querySelectorAll('[data-editable]');\neditables.forEach(function (elem) {\n  elem.addEventListener('click', function (event) {\n    var el = event.target;\n    var sign = prompt(\"Indirizzo dell'immagine\", el.src);\n    if (sign) {\n      el.setAttribute('src', sign);\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ })
 

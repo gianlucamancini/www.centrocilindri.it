@@ -10,3 +10,14 @@ let toggleNav = (event) => {
 
 showMenuButton.addEventListener('click', toggleNav);
 closeMenuButton.addEventListener('click', toggleNav);
+
+let editables = document.querySelectorAll('[data-editable]');
+editables.forEach((elem) => {
+  elem.addEventListener('click', (event) => {
+    let el = event.target;
+    let sign = prompt("Indirizzo dell'immagine", el.src);
+    if (sign) {
+      el.setAttribute('src', sign);
+    }
+  })
+})
