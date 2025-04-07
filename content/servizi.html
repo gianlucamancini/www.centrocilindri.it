@@ -5,8 +5,8 @@ backgroundImage: "/images/cilindro-danieli.jpg"
 ---
 
 <!-- Navigation -->
-<div class="top-0 overflow-x-auto whitespace-nowrap transition duration-100 z-50 bg-white shadow-sm">
-  <div class="mx-auto flex max-w-container justify-between space-x-8 p-4 text-sm font-semibold leading-6 text-slate-900 sm:px-6 lg:px-8">
+<div class="top-0 overflow-x-auto whitespace-nowrap transition duration-100 z-50 bg-white shadow-sm p-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl flex justify-between space-x-8 text-sm font-semibold leading-6 text-slate-900">
     <div class="flex space-x-8">
       <a href="#manutenzione">Manutenzione</a>
       <a href="#produzione">Produzione</a>
@@ -41,18 +41,18 @@ backgroundImage: "/images/cilindro-danieli.jpg"
 </section>
 
 <!-- Urgenze o impianto fermo? -->
-<section id="urgenze" aria-label="Urgenze" class="relative isolate overflow-hidden bg-slate-800 py-20 sm:py-32">
-  <div class="absolute size-full inset-0 bg-black/10 bg-gradient-to-t from-black/70 -z-10"></div>
-  <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl lg:max-w-3xl">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200 tracking-tight">Urgenze o impianto fermo?</h2>
-      <div class="mt-8 text-base/7 space-y-4 text-gray-300">
-        <p>Garantiamo riparazioni in urgenza di cilindri idraulici e pneumatici per ripartire il prima possibile con la produzione, incrementando allo stesso tempo la vita utile futura del cilindro.</p>
-        <p>Grazie alla rete di partner strategici possiamo inoltre fornire guarnizioni tornite in 24 ore fino a 1400 mm di diametro esterno<sup>*</sup></p>
-      </div>
-      <p class="mt-4 text-xs text-gray-300">*da verificare in base alla disponibilità produttiva dei fornitori</p>
+<section class="relative isolate overflow-hidden px-6 lg:px-8 bg-slate-800">
+  <img src="/images/hero.jpg" alt="" class="absolute w-full h-full inset-0 -z-10 object-cover">
+  <div class="mx-auto max-w-7xl py-28 sm:py-40 lg:py-48">
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200 tracking-tight">Urgenze o impianto fermo?</h2>
+    <div class="max-w-4xl mt-8 text-base/7 space-y-4 text-gray-300">
+      <p>Garantiamo riparazioni in urgenza di cilindri idraulici e pneumatici per ripartire il prima possibile con la produzione, incrementando allo stesso tempo la vita utile futura del cilindro.</p>
+      <p>Grazie alla rete di partner strategici possiamo inoltre fornire guarnizioni tornite in 24 ore fino a 1400 mm di diametro esterno<sup>*</sup></p>
     </div>
+    <p class="mt-4 text-xs text-gray-300">*da verificare in base alla disponibilità produttiva dei fornitori</p>
   </div>
+
+  <div class="absolute w-full h-full inset-0 -z-10 bg-black/20 bg-gradient-to-t from-black/70" aria-hidden="true"></div>
 </section>
 
 <!-- Centro Cilindri Digital Service -->
@@ -79,11 +79,11 @@ backgroundImage: "/images/cilindro-danieli.jpg"
   </div>
 </section>
 
-{{< stripe class="grid-cols-3 sm:grid-cols-4" >}}
-  {{< image src="/images/nuove/34.jpg" class="col-span-1 sm:col-span-2" >}}
-  {{< image src="/images/nuove/10.jpg" class="col-span-1" >}}
-  {{< image src="/images/nuove/12.jpg" class="col-span-1" >}}
-{{< /stripe >}}
+{{< gallery class="sm:grid-cols-3" >}}
+  {{< image src="/images/nuove/34.jpg" class="sm:col-span-1" >}}
+  {{< image src="/images/nuove/10.jpg" class="sm:col-span-1" >}}
+  {{< image src="/images/nuove/12.jpg" class="sm:col-span-1" >}}
+{{< /gallery >}}
 
 <!-- Produzione -->
 <section id="produzione" aria-label="Produzione" class="py-20 sm:py-32">
@@ -113,11 +113,11 @@ backgroundImage: "/images/cilindro-danieli.jpg"
   </div>
 </section>
 
-{{< stripe class="grid-cols-3 sm:grid-cols-4" >}}
-  {{< image src="/images/nuove/29.jpg" class="col-span-1 sm:col-span-2" >}}
-  {{< image src="/images/nuove/23.jpg" class="col-span-1" >}}
-  {{< image src="/images/nuove/3.jpg" class="col-span-1" >}}
-{{< /stripe >}}
+{{< gallery class="sm:grid-cols-3 lg:grid-cols-4" >}}
+  {{< image src="/images/nuove/29.jpg" class="sm:col-span-1 lg:col-span-2" >}}
+  {{< image src="/images/nuove/23.jpg" class="sm:col-span-1" >}}
+  {{< image src="/images/nuove/3.jpg" class="sm:col-span-1" >}}
+{{< /gallery >}}
 
 <!-- Ricambi -->
 <section id="ricambi" aria-label="Ricambi" class="py-20 sm:py-32">
