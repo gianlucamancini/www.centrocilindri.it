@@ -9,8 +9,10 @@
     <img src="{{ . }}" class="absolute w-full h-full inset-0 object-cover -z-10">
   {{ end }}
   <div class="absolute size-full inset-0 bg-black/10 bg-gradient-to-b from-black/70 -z-10"></div>
-  <div class="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56 xl:py-80">
-    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-200">{{ .Params.heading }}</h1>
+  <div class="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56 xl:py-72 2xl:py-80">
+    <div class="max-w-4xl">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-200">{{ .Params.heading }}</h1>
+    </div>
   </div>
 </div>
 
