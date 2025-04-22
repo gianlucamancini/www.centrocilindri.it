@@ -10,7 +10,6 @@ const openNav = () => {
     return;
   }
 
-  console.log('OPENING')
   NAV_IS_OPEN = true;
   rootElement.style.overflowY = 'hidden';
   nav.classList.remove('hidden');
@@ -21,7 +20,6 @@ const closeNav = () => {
     return;
   }
 
-  console.log('CLOSING')
   NAV_IS_OPEN = false;
   rootElement.style.overflowY = 'visible';
   nav.classList.add('hidden');
@@ -29,13 +27,3 @@ const closeNav = () => {
 
 openNavButton.addEventListener('click', openNav);
 closeNavButton.addEventListener('click', closeNav);
-
-const editableItems = document.querySelectorAll('[data-editable]');
-editableItems.forEach((item) => {
-  item.addEventListener('click', (event) => {
-    let element = event.target;
-    let sign = prompt("Indirizzo dell'immagine", element.src);
-
-    sign && element.setAttribute('src', sign);
-  })
-})
