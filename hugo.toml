@@ -1,4 +1,4 @@
-baseURL = "https://centrocilindri.it"
+baseURL = "https://www.centrocilindri.it"
 
 disableKinds = ["section", "taxonomy", "term"]
 
