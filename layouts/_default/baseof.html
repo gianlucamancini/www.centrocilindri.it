@@ -25,21 +25,20 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   </head>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTJ4S007ZW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YTJ4S007ZW');
-  </script>
-
   <body>
     {{ partial "nav.html" . }}
     <main>{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTJ4S007ZW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YTJ4S007ZW');
+    </script>
 
     {{ $scripts := resources.Get "js/main.js" }}
     {{ if hugo.IsProduction }}
