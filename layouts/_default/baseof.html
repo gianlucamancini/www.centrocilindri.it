@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>{{ block "title" . }}{{ end }} - Centro Cilindri</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ block "description" . }}Revisione, progettazione e costruzione di cilindri idraulici e pneumatici e vendita guarnizioni per cilindri e presse.{{ end}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ block "description" . }}Centro Cilindri offre servizi di revisione, progettazione e costruzione di cilindri idraulici e pneumatici e vendita guarnizioni per cilindri e presse.{{ end}}">
     <meta name="keywords" content="revisione, riparazione, retrofit, upgrade, costruzione, cilindri idraulici, cilindri pneumatici, guarnizioni, presse">
+
     <meta property="og:title" content="Centro Cilindri">
+    <meta property="og:type" content="website">
     <meta property="og:description" content="Revisione, riparazione e costruzione di cilindri idraulici e pneumatici e vendita guarnizioni per cilindri e presse, garantendo qualità, efficienza e supporto tecnico specializzato.">
     <meta property="og:image" content="{{ absURL "images/logo.png" }}">
 
@@ -23,6 +25,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTJ4S007ZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YTJ4S007ZW');
+  </script>
+
   <body>
     {{ partial "nav.html" . }}
     <main>{{ block "main" . }}{{ end }}</main>
