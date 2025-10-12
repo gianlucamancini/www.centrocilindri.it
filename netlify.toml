@@ -40,16 +40,3 @@ for = "/*.js"
 
 [headers.values]
 Cache-Control = "public, max-age=604800"
-
-[[headers]]
-for = "/webfonts/*"
-
-[headers.values]
-Cache-Control = "public, max-age=604800"
-
-[[headers]]
-for = "/*"
-
-[headers.values]
-X-XSS-Protection = "1; mode=block"
-X-Content-Type-Options = "nosniff"
